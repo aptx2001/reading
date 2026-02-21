@@ -1,4 +1,4 @@
-		*{
+        *{
  margin : 0;
  padding : 0;
  box-sizing: border-box;
@@ -10,11 +10,12 @@ body {
 }
 
 h1 {
-    padding-top: 5px;
-    padding-left: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
     font-size: 15px;
     font-family: monospace;
 }
+
 
 marquee {
     font-size: 25px;
@@ -22,14 +23,6 @@ marquee {
 
 mark {
     background-color: #EDEDED;
-}
-
-.question {
-    position: absolute;
-    height: 500%;
-    width: 400px;
-    background-color: tomato;
-    overflow-y: hidden;
 }
 
 a {
@@ -41,12 +34,27 @@ a:visited {
     color: black;
 }
 
+a.active {
+  background-color: white;
+}
 ol {
-    padding: 20px;
-    margin-left: 20px;
+    margin: 40px;
 }
 
-.answer {
+
+.except {
+    position: absolute;
+}
+
+.left {
+    position: absolute;
+    height: 500%;
+    width: 400px;
+    background-color: tomato;
+    overflow-y: hidden;
+}
+
+.right {
     position: absolute;
     height: 500%;
     width: calc(100% - 400px);
@@ -59,6 +67,7 @@ ol {
     height: 200%;
     padding-top: 40px;
     padding-left: 10px;
+    padding-right: 10px;
     font-family: sans-serif;
     font-size: 14px;
     line-height: 1.5;
