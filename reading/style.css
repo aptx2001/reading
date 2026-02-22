@@ -1,0 +1,87 @@
+        *{
+ margin : 0;
+ padding : 0;
+ box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    overflow-y: hidden;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+marquee {
+    font-size: 25px;
+}
+
+mark {
+    background-color: #EDEDED;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a.active {
+  background-color: white;
+}
+ol {
+    margin: 40px;
+}
+
+
+.except {
+    position: absolute;
+}
+
+.left {
+    position: absolute;
+    height: 500%;
+    width: 400px;
+    background-color: tomato;
+    overflow-y: hidden;
+}
+
+.right {
+    position: absolute;
+    height: 500%;
+    width: calc(100% - 400px);
+    margin-left: 400px;
+    overflow-y: scroll;
+}
+
+.content {
+    display: absolute;
+    height: 200%;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  /*  overflow-y:auto;*/
+}
+
+.content:target {
+    display: block;
+}
+
+.click:hover {
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width: 704px) {
+
+}
