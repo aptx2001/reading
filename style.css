@@ -1,98 +1,86 @@
-		*{
+        *{
  margin : 0;
- padding: 0;
+ padding : 0;
  box-sizing: border-box;
 }
 
 body {
+    font-family: monospace;
+    overflow-y: hidden;
 }
 
-/*.
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  z-index: -1;
-  opacity: 100;
+h1 {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: monospace;
 }
 
-.bg-video__content {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-*/
 
-video {
-	width: 70%;
+marquee {
+    font-size: 25px;
 }
 
-.video2 {
-	width: 100%;
-}
-
-img{
-	height: 40%;
-	position: absolute;
-	bottom: 20%;
-	margin-left: 1px;
-}
-
-p {
-	color: black;
-	text-decoration: none;
-	font-family: sans-serif;
-	font-size: 15px;
-	line-height: 1.5;
-	display: inline;
-/*.	display: inline;*/
-}
-
-.green {
-	color: black;
-	background-color: lightgreen;
-/*.
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	*/
-}
-
-.red {
-	color: black;
-	background-color: orangered;
-}
-
-.blue {
-	color: black;
-	background-color: skyblue;
-}
-
-.yellow {
-	color: black;
-	background-color: #EDFF4D;
-}
-
-.pink {
-	color: black;
-	background-color: pink;
+mark {
+    background-color: #EDEDED;
 }
 
 a {
-  color: black;
+    color: black;
+    text-decoration: none;
 }
 
 a:visited {
-  color: black;
+    color: black;
 }
 
-a:hover {
-	color: white;
+a.active {
+  background-color: white;
+}
+ol {
+    margin: 40px;
 }
 
+
+.except {
+    position: absolute;
+}
+
+.left {
+    position: absolute;
+    height: 500%;
+    width: 400px;
+    background-color: tomato;
+    overflow-y: hidden;
+}
+
+.right {
+    position: absolute;
+    height: 500%;
+    width: calc(100% - 400px);
+    margin-left: 400px;
+    overflow-y: scroll;
+}
+
+.content {
+    display: absolute;
+    height: 200%;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  /*  overflow-y:auto;*/
+}
+
+.content:target {
+    display: block;
+}
+
+.click:hover {
+    background-color: whitesmoke;
+}
 
 @media screen and (max-width: 704px) {
 
