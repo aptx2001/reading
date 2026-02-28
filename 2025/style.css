@@ -18,7 +18,7 @@ h1 {
 
 
 marquee {
-    font-size: 25px;
+    font-size: 30px;
     position: fixed;
 }
 
@@ -43,7 +43,7 @@ ol {
     position: absolute;
 }
 
-.question {
+.left {
     position: absolute;
     height: 500%;
     width: 400px;
@@ -51,12 +51,13 @@ ol {
     overflow-y: hidden;
 }
 
-.answer {
+.right {
     position: absolute;
     height: 500%;
     width: calc(100% - 400px);
     margin-left: 400px;
     overflow-y: scroll;
+    background-color: lightblue;
 }
 
 .content {
@@ -80,5 +81,22 @@ ol {
 }
 
 @media screen and (max-width: 704px) {
+
+
+.left {
+    position: absolute;
+    height: 500%;
+    width: 100%;
+    background-color: CadetBlue;
+    overflow-y: hidden;
+}
+
+.right {
+    position: absolute;
+    height: 500%;
+    width: calc(100% - 400px);
+    margin-left: 400px;
+    overflow-y: scroll;
+}
 
 }
